@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3ED70"
+    tools:context=".Fragment3">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A8ECE5">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="356dp"
+            android:layout_height="488dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <TextView
+                android:id="@+id/textView_iddireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/id_direccion"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_idpago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/identificador"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_nombrecalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_nombrepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/nombre_de_la_calle"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_calle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calle"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_callepago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/tipo_de_calle"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_ciudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ciudad"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_ciudadpago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/localidad"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estado"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_estadopago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/comunidad"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_Pais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pais"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_paispago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/es_gb_usa"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/textView_CP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/codigo_postal"
+                android:textColor="#00695C" />
+
+            <EditText
+                android:id="@+id/txt_CPpago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/ejemplo_39001"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Dirección Pago"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

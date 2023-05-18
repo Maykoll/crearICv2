@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAED7A">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacto_ic"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="343dp"
+            android:layout_height="297dp"
+            android:layout_marginTop="88dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TextView
+                android:id="@+id/textView_idcontacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtviewcontacto"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txt_idcontacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/id_del_contacto"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textView_Nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtview_Nombre"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txt_nombrecontacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/nombre_del_contacto"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/textView_emailcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txtview_emailcontacto"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/txt_emailcontacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email_contacto"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="18sp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

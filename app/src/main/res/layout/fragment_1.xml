@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E88566"
+    tools:context=".Fragment1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="362dp"
+            android:layout_height="430dp"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TextView
+                android:id="@+id/textView_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/c_digo"
+                android:textColor="#3E2723"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_codigoIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/id_interlocutor"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                android:textSize="16sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textView_nombrefiscal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_fiscal"
+                android:textColor="#3E2723"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_nombrefiscal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/nombre_de_ic"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                tools:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_NIF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nif"
+                android:textColor="#3E2723"
+                tools:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_NIF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/n_mero_de_referencia"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_TipoIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_de_ic"
+                android:textColor="#3E2723"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_tipoIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/cliente_proveedor_o_lead"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_fono"
+                android:textColor="#3E2723" />
+
+            <EditText
+                android:id="@+id/txt_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/n_telefono"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/TextView_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="#3E2723"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/txt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email_ic"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#3E2723"
+                android:textSize="16sp"
+                tools:ignore="TextFields" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datos_generales_ic"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
